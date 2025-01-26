@@ -1,0 +1,162 @@
+.container{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .slider {
+    height: 750px;
+    width:100vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+  }
+  .box1{      background:url('https://m.media-amazon.com/images/I/51dMgo8EChL.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box2{
+  background:url('https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1675/1715415371675-i?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box3{
+  background:url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/147C0/production/_132740938_indeximage.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box4{
+  background:url('https://www.numuki.com/images/category/ben-10.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box5{
+  background:url('https://4kwallpapers.com/images/wallpapers/tom-and-jerry-8k-7680x4320-20528.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box6{
+  background:url('https://i.pinimg.com/736x/ed/b9/f5/edb9f5d07ddb47328da177f6822a954b.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+  .box7{
+  background:url('https://english.mathrubhumi.com/image/contentid/policy:1.9068791:1717739652/New%20Project%20(40).jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
+    background-position:center center;}
+
+  .slider [class*="box"] {
+  /*   float: left; */
+    overflow: hidden;
+    border-radius:20px;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      position:absolute;
+  }
+  .slider [class*="box"]:nth-child(7),
+  .slider [class*="box"]:nth-child(1) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+  }
+  .slider [class*="box"]:nth-child(2),
+  .slider [class*="box"]:nth-child(6) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+  }
+  .slider [class*="box"]:nth-child(3),
+  .slider [class*="box"]:nth-child(5) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+  }
+  .slider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border-color: #c92026;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+  }
+  .slider [class*="box"]:nth-child(1){
+    left:-13%;}
+  .slider [class*="box"]:nth-child(2){
+    left:-5%;}
+  .slider [class*="box"]:nth-child(3){
+    left:10%;}
+  .slider [class*="box"]:nth-child(4){
+    left:50%;}
+  .slider [class*="box"]:nth-child(5){
+    left:71%;}
+  .slider [class*="box"]:nth-child(6){
+    left:85%;}
+  .slider [class*="box"]:nth-child(7){
+    left:100%;}
+  .slider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+  }
+  /Animation for buyers landing page slider/
+  @-webkit-keyframes firstChild {
+      0% {left:100%; transform:scale(0.2) translate(-50%,-50%);}
+      100% { left: -13%; transform : scale(0.2) translate(-50%,-50%); }
+  }
+  @keyframes firstChild {
+     0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+  .image-text {
+    position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color:#000000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+.bottom-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+}
+pokemon-text {
+  position: absolute;
+  top: 80%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5; /* Ensure buttons are on top */
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+  
+ 
+
+
